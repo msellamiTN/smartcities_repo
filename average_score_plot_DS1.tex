@@ -1,0 +1,26 @@
+
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={Average Rating Score vs. k (#Number of services)},
+    xlabel={k (#Number of services)},
+    ylabel={Average Rating Score},
+    grid=major,
+    legend entries={Average Rating Score},
+]
+\addplot coordinates {
+(2.0, 1.2470103258976766)
+(4.0, 1.2430394188461733)
+(6.0, 1.2415479769657352)
+(8.0, 1.240629915693158)
+(10.0, 1.239880094978258)
+};
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
